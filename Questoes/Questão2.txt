@@ -1,0 +1,18 @@
+a) Lista:
+Para adicionar o elemento 2, como a lista está vazia, será inserido na primeira posição. Para adicionar o elemento 4 percorre a lista ate achar o ultimo elemento (2) e adiciona depois dele (no final da lista), Para adicionar o elemento 5 percorre a lista ate achar o ultimo elemento (4) e adiciona depois dele (no final da lista), Para adicionar o elemento 6 percorre a lista ate achar o ultimo elemento (6) e adiciona depois dele (no final da lista), Para adicionar o elemento 8 percorre a lista ate achar o ultimo elemento (6) e adiciona depois dele (no final da lista), Para adicionar o elemento 7 percorre a lista ate achar o ultimo elemento (8) e adiciona depois dele (no final da lista).
+
+Para remover o 7, diminui o tamanha da lista. Para remover o 8, diminui o tamanha da lista - 1. Para remover o 6, diminui o tamanha da lista - 1. Para remover o 5, diminui o tamanha da lista - 1. Para remover o 4, diminui o tamanha da lista - 1. Para remover o 2, diminui o tamanha da lista - 1, a lista ficara null.
+
+b) Pilha:
+Para inserir o elemento 2, como a pilha está vazia, será inserido na primeira posição. Para adicionar o elemento 4, percorre a pilha até achar o último elemento (2) e insere depois dele (topo da pilha). Para adicionar o elemento 5, percorre a pilha até achar o último elemento (4) e insere depois dele (topo da pilha). Para adicionar o elemento 6, percorre a pilha até achar o último elemento (5) e insere depois dele (topo da pilha). Para adicionar o elemento 8, percorre a pilha até achar o último elemento (6) e insere depois dele (topo da pilha). Para adicionar o elemento 7, percorre a pilha até achar o último elemento (8) e insere depois dele (topo da pilha).
+
+Para remover o 7, diminui o tamanha da pilha. Para remover o 8, diminui o tamanha da pilha - 1. Para remover o 6, diminui o tamanha da pilha - 1. Para remover o 5, diminui o tamanha da pilha - 1. Para remover o 4, diminui o tamanha da pilha - 1. Para remover o 2, diminui o tamanha da pilha - 1, assim removemos o elemento do topa da pilha.
+OBS: Só e possível remover o elemento da última posição (topo da pilha).
+
+
+c) Fila:
+Para inserir o elemento 2, como a fila está vazia, será inserido na primeira posição. Para adicionar o elemento 4, percorre a fila até achar o último elemento (2) e adiciona depois dele (fim da fila). Para adicionar o elemento 5, percorre a fila até achar o último elemento (4) e adiciona depois dele (fim da fila). Para adicionar o elemento 6, percorre a fila até achar o último elemento (5) e adiciona depois dele (fim da fila). Para adicionar o elemento 8, percorre a fila até achar o último elemento (6) e adiciona depois dele (fim da fila). Para adicionar o elemento 7, percorre a fila até achar o último elemento (8) e adiciona depois dele (fim da fila). 
+
+Para remover o elemento 2, remove o elemento da primeira posição, percorrer a fila movendo-os elementos para a posição anterior. Para remover o elemento 4, remove o elemento da primeira posição, percorrer a fila movendo-os elementos para a posição anterior. 
+Para remover o elemento 5, remove o elemento da primeira posição, percorrer a fila movendo-os elementos para a posição anterior. Para remover o elemento 6, remove o elemento da primeira posição, percorrer a fila movendo-os elementos para a posição anterior. Para remover o elemento 8, remove o elemento da primeira posição, percorrer a fila movendo-os elementos para a posição anterior. Para remover o elemento 7, remove o elemento da primeira posição, percorrer a fila movendo-os elementos para a posição anterior. 
+OBS: Só e possível remover o elemento da primeira posição (início da fila).

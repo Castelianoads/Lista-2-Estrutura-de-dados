@@ -1,0 +1,10 @@
+a) Lista:
+Existem dois tipos de lista: as listas ligadas e as listas duplamente ligadas.
+Quando adicionamos algum dado na lista ligada, adicionanmos um nó apontando sendo o ultimo nó da lista, quando adicionamos outro dado, pegamos que, era anteriormente e último nó e indicamos que  próximo nó dele será este último nó adicionado.
+A lista duplamente ligada e parecida com a lista ligada, a diferença é que os nó sabem quem é o próximo e também quem é o elemento anterior, os nós também passam apontar para o nó anterior.
+
+b) Pilha:
+E uma estrutura de daos em que o acesso é restrito ao elemento mais recente na pilha, é possível inserir no topo, retirar do topo e observar o topo. Ultimo a entrar, primeiro a sair.
+
+c) Fila:
+A fila é um conjunto de dados a partir do qual podem-se eliminar itens numa extremidade (chamada início da fila) e n qual podem-se inserir itens na outra extremidade (chamada final da fila). Um novo elemento da fila somente pode ser inserido na última posição (fim da fila), um elemento só pode ser removido da primeira posição (início da fila). Primeiro a chegar é o primeiro a sair.
