@@ -3,6 +3,7 @@ package classes;
 public class Fila<T> {
 
     protected T[] elementos;
+    protected T[] elementosJ;
     protected int tamanho;
 
     public Fila(int capacidade){
@@ -67,6 +68,23 @@ public class Fila<T> {
 
     public int tamanho(){
         return this.tamanho;
+    }
+
+    public boolean inverterFila() {
+        int j = elementos.length - 1;
+        if (this.tamanho < this.elementos.length) {
+            for (int i = 0; i < elementos.length; i++) {
+                this.elementosJ[i] = this.elementos[j];
+                j--;
+            }
+            j = 0;
+            for (int i = 0; i < elementos.length; i++) {
+                this.elementos[i] = this.elementosJ[j];
+                j++;
+            }
+            return true;
+        }
+        return true;
     }
 
     @Override
