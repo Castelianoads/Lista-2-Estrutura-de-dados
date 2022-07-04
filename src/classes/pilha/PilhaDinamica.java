@@ -1,5 +1,7 @@
 package classes.pilha;
 
+import java.util.Stack;
+
 public class PilhaDinamica {
 
     private No topo;
@@ -40,5 +42,35 @@ public class PilhaDinamica {
             aux = aux.getProx();
         }
         System.out.println("Fim\n\n\n");
+    }
+    
+    public Stack<Integer> inverterPilha(Stack<Integer> pilha){
+
+        Stack<Integer> pilhaInvertida = new Stack<>();
+
+        for (int i = pilha.size() - 1; i >= 0; i--) {
+            pilhaInvertida.add(pilha.get(i));
+        }
+        pilha.clear();
+        for (int i = 0; i < pilhaInvertida.size(); i++) {
+            pilha.add(pilhaInvertida.get(i));
+        }
+        return pilha;
+    }
+
+    public String inverterString(String str){
+		char[] ch = str.toCharArray();
+	    int begin = 0;
+	    int end = ch.length-1;
+	    char temp;
+	    while(end>begin){
+	        temp = ch[begin];
+	        ch[begin] = ch[end];
+	        ch[end] = temp;
+	        end--;
+	        begin++;
+	    }
+	    str = new String(ch);
+        return str;
     }
 }

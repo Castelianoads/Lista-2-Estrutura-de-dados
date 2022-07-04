@@ -21,7 +21,7 @@ public class App {
         List<Livro> livro = new ArrayList<>();
         Pilha<String> pilhaLivros = new Pilha<>(20);
         FilaDinamica<Integer> filaDinamica = new FilaDinamica<Integer>(10);
-        Fila<Integer> fila = new Fila<Integer>(10);
+        Fila<Object> fila = new Fila<Object>(7);
         PilhaDinamica pilhaDinamica = new PilhaDinamica();
 
         ///////////////////////////////////////////////////////////// EXERCICIO 3
@@ -36,7 +36,7 @@ public class App {
         contato.add(c4);
 
         ///////////////////////////////////////////////////////////// EXERCICIO 4
-        System.out.println("Exercicio 4");         
+        System.out.println("\n\nExercicio 4");         
         Livro l1 = new Livro("Nome 1", 2452, 2021, "Autor 1");
         Livro l2 = new Livro("Nome 2", 2987, 2020, "Autor 2");
         Livro l3 = new Livro("Nome 3", 3365, 2003, "Autor 3");
@@ -57,9 +57,12 @@ public class App {
         System.out.println(pilhaLivros);
         System.out.println("\nTamanho da pilha: "+ pilhaLivros.tamanho());
         System.out.println("A pilha está vazia? "+ pilhaLivros.estaVazia());
+        pilhaLivros.empilha(l6);
+        System.out.println("\nTamanho da pilha: "+ pilhaLivros.tamanho());
+        System.out.println(pilhaLivros);
 
         ///////////////////////////////////////////////////////////// EXERCICIO 7
-        System.out.println("Exercicio 7");        
+        System.out.println("\n\nExercicio 7");        
         filaDinamica.enfileirar(1);
         filaDinamica.enfileirar(4);
         filaDinamica.enfileirar(5);
@@ -72,35 +75,22 @@ public class App {
         fila.enfileirar(4);
         fila.enfileirar(5);
         fila.enfileirar(2);
-        System.out.println("Fila dinamica normal: " + fila.toString());
+        System.out.println("Fila impressa normal: " + fila.toString());
         fila.inverterFila();
-        System.out.println("Fila dinamica invertida: " + fila.toString());
+        System.out.println("Fila invertida: " + fila.toString());
 
 
         /////////////////////////////////////////////////////////////////// EXERCICIO 8
-        Scanner sc = new Scanner(System.in);
-        int vetor[] = new int[10];
-        int sair = 0;
-        int i = 0;
-        int n;
+        System.out.println("\n\nExercicio 8");
+        System.out.println("Digite um nome: ");
+        Scanner scanner = new Scanner(System.in);
+        String nome = scanner.next();         
+        
+        System.out.println("Nome: " + nome);
 
-        System.out.println("Exercicio 5");
-        while(sair == 0 || i <= 9){
-            System.out.print("Digite um numero: ");
-            n = sc.nextInt();
-            if(n == 0){
-               sair = 1;
-               i = 9;
-            } else {
-                vetor[i] = n;
-            }
-            i++;
-        }
-
-        for (int j = 0; j < vetor.length; j++) {
-            pilhaDinamica.add(vetor[j]);
-            filaDinamica.enfileirar(vetor[j]);
-        }
+        System.out.println("Nome invertido: " + pilhaDinamica.inverterString(nome));
+        
+        
 
      }
 }
